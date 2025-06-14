@@ -2,27 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Learn essential Japanese phrases and cultural tips for tourists.">
-    <meta name="keywords" content="Learn Japanese, Travel Japanese, Japanese phrases, Japan tourism">
+    <meta name="description" content="Learn essential Japanese phrases with audio. Perfect for travelers visiting Japan.">
+    <meta name="keywords" content="Japanese, Travel, Language, Audio, Phrases, Japan">
     <meta name="author" content="Japanese Travel Guide">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essential Phrases - Learn Japanese for Travel</title>
+    <title>Essential Phrases - Learn Japanese</title>
     <link rel="stylesheet" href="style.css">
     <script src="audio.js" defer></script>
 </head>
 <body>
-    <header><h1>Essential Japanese Phrases</h1></header>
+    <header>
+        <h1>Essential Japanese Phrases</h1>
+        <nav><a href="index.html">🏠 Home</a></nav>
+    </header>
     <main>
         <section>
             <h2>Greetings</h2>
             <table>
                 <tr><th>Japanese</th><th>Romaji</th><th>English</th><th>Audio</th></tr>
                 <tr><td>こんにちは</td><td>Konnichiwa</td><td>Hello</td>
-                    <td><button onclick="playAudio('greeting1')">▶</button><audio id="greeting1" src="audio/konnichiwa.mp3"></audio></td></tr>
-                <tr><td>ありがとう</td><td>Arigatou</td><td>Thank you</td>
-                    <td><button onclick="playAudio('greeting2')">▶</button><audio id="greeting2" src="audio/arigatou.mp3"></audio></td></tr>
+                    <td><button onclick="playAudio('konnichiwa')">▶</button><audio id="konnichiwa" src="audio/konnichiwa.mp3"></audio></td></tr>
+                <tr><td>おはようございます</td><td>Ohayou gozaimasu</td><td>Good morning</td>
+                    <td><button onclick="playAudio('ohayou')">▶</button><audio id="ohayou" src="audio/ohayou_gozaimasu.mp3"></audio></td></tr>
+                <tr><td>こんばんは</td><td>Konbanwa</td><td>Good evening</td>
+                    <td><button onclick="playAudio('konbanwa')">▶</button><audio id="konbanwa" src="audio/konbanwa.mp3"></audio></td></tr>
                 <tr><td>さようなら</td><td>Sayounara</td><td>Goodbye</td>
-                    <td><button onclick="playAudio('greeting3')">▶</button><audio id="greeting3" src="audio/sayounara.mp3"></audio></td></tr>
+                    <td><button onclick="playAudio('sayounara')">▶</button><audio id="sayounara" src="audio/sayounara.mp3"></audio></td></tr>
+            </table>
+        </section>
+        <section>
+            <h2>Dining</h2>
+            <table>
+                <tr><td>水をください</td><td>Mizu wo kudasai</td><td>Water, please</td>
+                    <td><button onclick="playAudio('mizu')">▶</button><audio id="mizu" src="audio/mizu_wo_kudasai.mp3"></audio></td></tr>
+                <tr><td>メニューをください</td><td>Menyuu wo kudasai</td><td>Menu, please</td>
+                    <td><button onclick="playAudio('menyuu')">▶</button><audio id="menyuu" src="audio/menyuu_wo_kudasai.mp3"></audio></td></tr>
+                <tr><td>いただきます</td><td>Itadakimasu</td><td>Let’s eat</td>
+                    <td><button onclick="playAudio('itadakimasu')">▶</button><audio id="itadakimasu" src="audio/itadakimasu.mp3"></audio></td></tr>
+                <tr><td>ごちそうさまでした</td><td>Gochisousama deshita</td><td>Thanks for the meal</td>
+                    <td><button onclick="playAudio('gochisousama')">▶</button><audio id="gochisousama" src="audio/gochisousama_deshita.mp3"></audio></td></tr>
+            </table>
+        </section>
+        <section>
+            <h2>Emergencies</h2>
+            <table>
+                <tr><td>助けて！</td><td>Tasukete!</td><td>Help!</td>
+                    <td><button onclick="playAudio('tasukete')">▶</button><audio id="tasukete" src="audio/tasukete.mp3"></audio></td></tr>
+                <tr><td>警察を呼んでください</td><td>Keisatsu wo yonde kudasai</td><td>Call the police</td>
+                    <td><button onclick="playAudio('keisatsu')">▶</button><audio id="keisatsu" src="audio/keisatsu_wo_yondete_kudasai.mp3"></audio></td></tr>
+                <tr><td>病院はどこですか？</td><td>Byouin wa doko desu ka?</td><td>Where is the hospital?</td>
+                    <td><button onclick="playAudio('byouin')">▶</button><audio id="byouin" src="audio/byouin_wa_doko_desu_ka.mp3"></audio></td></tr>
+                <tr><td>具合が悪いです</td><td>Guai ga warui desu</td><td>I feel sick</td>
+                    <td><button onclick="playAudio('guai')">▶</button><audio id="guai" src="audio/guai_ga_warui_desu.mp3"></audio></td></tr>
             </table>
         </section>
     </main>
