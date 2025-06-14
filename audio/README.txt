@@ -1,1 +1,1 @@
-Place your .mp3 pronunciation files in this folder named like: konnichiwa.mp3
+Place all .mp3 audio files here matching those referenced in phrases.html (e.g., konnichiwa.mp3)

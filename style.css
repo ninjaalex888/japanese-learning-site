@@ -19,7 +19,7 @@ body {
   color: var(--text);
 }
 header.hero {
-  background-image: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c'); /* Tokyo skyline */
+  background-image: url('https://images.unsplash.com/photo-1505205296326-2178af1b47bf'); /* Tokyo skyline */
   background-size: cover;
   background-position: center;
   position: relative;
