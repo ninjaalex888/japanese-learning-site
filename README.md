@@ -1,80 +1,51 @@
-# 🇯🇵 Learn Japanese for Travel
 
-**Your friendly guide to the language, etiquette, and everyday essentials for visiting Japan.**
+# 📈 Green Stock Dashboard
 
-🌐 Live site: [https://ninjaalex888.github.io/japanese-learning-site/](https://ninjaalex888.github.io/japanese-learning-site/)
-
----
-
-## ✨ What is This?
-
-**Learn Japanese for Travel** is a beautifully designed, beginner-friendly website built for travelers who want to experience Japan with more confidence and cultural understanding.
-
-Whether you're planning a trip to Tokyo, Kyoto, Osaka, or anywhere in between, this site provides you with the most essential tools to:
-- Communicate politely in Japanese
-- Understand basic signs and numbers
-- Navigate trains, shops, and restaurants
-- Respect Japanese traditions and social norms
+A modern, elegant, and feature-rich stock analysis dashboard using HTML, CSS, and JavaScript.
 
 ---
 
-## 💡 Features
+## 🚀 How to Run Locally
 
-### 🗣️ Essential Phrases with Audio
-- Real-world scenarios: greetings, dining, emergencies, directions, and more.
-- Native-style pronunciation with downloadable `.mp3` audio clips.
+You can easily run this dashboard locally using Python's built-in web server.
 
-### 🎴 Flashcards for Fast Recall
-- Rapid-fire vocabulary decks (greetings, directions, numbers).
-- Great for on-the-go practice before or during your trip.
+### ✅ Prerequisites
+- Python 3 installed
 
-### 🧠 Interactive Quizzes
-- Test your knowledge and reinforce what you’ve learned with friendly multiple-choice questions.
+### 🔧 Steps
 
-### 📚 Mini-Tutorials + Cultural Etiquette
-- How to pronounce Japanese vowels
-- What to do (and not do) at an onsen, restaurant, shrine, or train station
-- Social norms like bowing, shoes, and handing over money/gifts
+1. **Unzip the project folder** if you haven't already.
+2. **Open a terminal** (Command Prompt, PowerShell, or Bash).
+3. **Navigate to the unzipped folder**:
+   ```bash
+   cd path/to/your/dashboard/folder
+   ```
+4. **Start the local server**:
+   ```bash
+   python -m http.server 8000
+   ```
+5. **Open your browser** and go to:
+   ```
+   http://localhost:8000
+   ```
 
-### 🔢 Numbers, 🕒 Time, 🗺️ Directions
-- Learn to read, speak, and understand everyday terms used in maps, signs, and schedules.
-
----
-
-## 📱 Built For Mobile & Desktop
-
-Responsive design ensures it looks and works beautifully on phones, tablets, and desktops — perfect for use while traveling in Japan.
-
----
-
-## 🚀 Tech Stack
-
-- HTML, CSS, JavaScript (vanilla)
-- Audio powered by native HTML5
-- Hosted via GitHub Pages
+You should now see your stock dashboard in action!
 
 ---
 
-## 🛠 Want to Contribute?
+## 🧩 Features
 
-This is an open and growing resource. If you're a learner, speaker, or enthusiast of Japanese, feel free to:
-- Suggest improvements
-- Add new phrases or cultural tips
-- Improve translations or explanations
-
-Fork the repo and submit a pull request!
-
----
-
-## 📧 Contact
-
-Have questions or want to collaborate?
-Reach out via GitHub or open an issue.
+- Real-time stock lookup with autocomplete
+- Charts for historical stock prices
+- Financial indicators: P/E, ROE, ROA, etc.
+- Projected stock sentiment over time
+- Spinner while loading data
+- Toast notifications
+- Sidebar with most searched stocks
 
 ---
 
-## 🙏 Arigatou Gozaimasu!
+## 🧠 Notes
 
-Thank you for using **Learn Japanese for Travel** — we hope it helps make your journey more meaningful, respectful, and fun!
-
-> "To learn a language is to open a door to another world." 🌏
+- Data provided by [Financial Modeling Prep API](https://financialmodelingprep.com).
+- Make sure you are connected to the internet for data to load.

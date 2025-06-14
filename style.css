@@ -1,67 +1,79 @@
 
-*{box-sizing:border-box}
+:root {
+  --bg: #f8f9fa;
+  --text: #333;
+  --card: rgba(255, 255, 255, 0.9);
+  --accent: #1d4ed8;
+}
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: rgba(30, 30, 30, 0.9);
+  --accent: #e11d48;
+}
+* { box-sizing: border-box; }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
 }
 header.hero {
   background-image: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c'); /* Tokyo skyline */
   background-size: cover;
   background-position: center;
-  color: white;
   position: relative;
   height: 250px;
 }
 header .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
   height: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
-header .overlay h1 {
-  margin: 0;
-  font-size: 2em;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav {
-  margin-top: 10px;
+#theme-toggle {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 nav a {
-  color: #fff;
-  margin: 0 10px;
+  color: white;
   text-decoration: none;
+  margin: 0 10px;
 }
 main {
   padding: 2rem;
-  background: #ffffff;
-  background-image: url('https://images.unsplash.com/photo-1588240281640-427d88d517e4'); /* Japanese countryside */
-  background-size: cover;
-  background-position: center;
+  background-image: url('https://images.unsplash.com/photo-1588240281640-427d88d517e4'); /* Countryside */
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #000;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  text-shadow: 0 0 5px rgba(255,255,255,0.7);
 }
 section {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem 2rem;
-  border-radius: 10px;
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  background-color: rgba(255, 255, 255, 0.95);
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  background: var(--card);
 }
 button {
-  background: #16a34a;
+  background: var(--accent);
   color: white;
   border: none;
   border-radius: 5px;
@@ -69,10 +81,10 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #15803d;
+  opacity: 0.9;
 }
-@media(max-width:600px){
-  table, thead, tbody, th, td, tr{display:block}
-  th, td{padding-left:50%}
-  td::before, th::before{position:absolute;left:10px;width:45%;white-space:nowrap}
+.culture-img {
+  display: block;
+  max-width: 100px;
+  margin: 1rem auto;
 }
