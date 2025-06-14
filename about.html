@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About This Site - Learn Japanese</title>
+  <title>About - Learn Japanese</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg">
   <link rel="stylesheet" href="style.css">
   <script src="theme.js" defer></script>
 </head>
@@ -11,7 +12,7 @@
   <header class="hero">
     <div class="overlay">
       <div class="topbar">
-        <h1>🇯🇵 About This Site</h1>
+        <h1>🇯🇵 About</h1>
         <button id="theme-toggle">🌓</button>
       </div>
       
@@ -27,15 +28,21 @@
     </div>
   </header>
   <main>
-    <section>
-      <h2>About This Site</h2>
-      <p>This section of the site helps you with <strong>about this site</strong> when traveling in Japan. More content coming soon!</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Torii_gate_icon.png/480px-Torii_gate_icon.png" alt="Torii Gate" class="culture-img">
-    </section>
+    <section><h2>About This Site</h2><p>This is your friendly guide to Japanese language and culture for travelers.</p></section>
   </main>
   <footer>
     <p>Made with ❤️ and 🍵 in appreciation of Japanese culture</p>
     <p>⛩️ 案内所 | Language & Culture Portal</p>
   </footer>
+  
+<div id="language-selector">
+  🌐 Language:
+  <select onchange="alert('Language switching coming soon!')">
+    <option selected>English</option>
+    <option disabled>日本語 (Japanese)</option>
+    <option disabled>Español</option>
+  </select>
+</div>
+
 </body>
 </html>

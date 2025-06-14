@@ -1,49 +1,35 @@
 const questions = [
-    {
-        question: 'What does "こんにちは" mean?',
-        options: ['Good morning', 'Good evening', 'Hello'],
-        answer: 'Hello'
-    },
-    {
-        question: 'What does "ありがとう" mean?',
-        options: ['Goodbye', 'Thank you', 'Please'],
-        answer: 'Thank you'
-    },
-    {
-        question: 'What does "助けて！" mean?',
-        options: ['Excuse me', 'Help!', 'I’m lost'],
-        answer: 'Help!'
-    },
-    {
-        question: 'What does "メニューをください" mean?',
-        options: ['Water, please', 'The check, please', 'Menu, please'],
-        answer: 'Menu, please'
-    }
+    { question: 'What does "こんにちは" mean?', opts: ['Hello', 'Thank you', 'Help!'], ans: 'Hello' },
+    { question: 'How do you say "2" in Japanese?', opts: ['Ichi', 'Ni', 'San'], ans: 'Ni' },
+    { question: 'What does "駅はどこですか？" mean?', opts: ['Where is the station?', 'Where is the hospital?', 'Where is the toilet?'], ans: 'Where is the station?' },
+    { question: 'Translate "助けて！"', opts: ['Excuse me', 'Thank you', 'Help!'], ans: 'Help!' }
 ];
 
-let current = 0;
+let cur = 0;
 
-function showQuestion() {
-    const q = questions[current];
+function load() {
+    render();
+}
+
+function render() {
+    const q = questions[cur];
     const main = document.querySelector('main');
     main.innerHTML = `
         <h2>${q.question}</h2>
-        ${q.options.map(opt => `<button onclick="checkAnswer('${opt}')">${opt}</button>`).join('<br>')}
-        <p id="result"></p>
-        <button onclick="nextQuestion()">Next</button>
+        ${q.opts.map(o=>`<button onclick="check('${o}')">${o}</button>`).join('<br>')}
+        <p id="res"></p>
+        <button onclick="next()">Next</button>
         <nav><a href="index.html">🏠 Home</a></nav>
     `;
 }
 
-function checkAnswer(selected) {
-    const result = document.getElementById('result');
-    const correct = questions[current].answer;
-    result.textContent = selected === correct ? '✅ Correct!' : `❌ Wrong! Correct: ${correct}`;
+function check(sel) {
+    document.getElementById('res').textContent = sel === questions[cur].ans ? '✅ Correct!' : `❌ Correct answer: ${questions[cur].ans}`;
 }
 
-function nextQuestion() {
-    current = (current + 1) % questions.length;
-    showQuestion();
+function next() {
+    cur = (cur + 1) % questions.length;
+    render();
 }
 
-document.addEventListener('DOMContentLoaded', showQuestion);
+document.addEventListener('DOMContentLoaded', load);

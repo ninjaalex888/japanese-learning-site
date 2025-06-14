@@ -88,3 +88,16 @@ button:hover {
   max-width: 100px;
   margin: 1rem auto;
 }
+
+
+#language-selector {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: var(--card);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+  z-index: 1000;
+}
