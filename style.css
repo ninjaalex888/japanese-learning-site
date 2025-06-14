@@ -1,62 +1,78 @@
 
-* {
-    box-sizing: border-box;
-}
+*{box-sizing:border-box}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
-header {
-    background: #007bff;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+header.hero {
+  background-image: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c'); /* Tokyo skyline */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  height: 250px;
+}
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+header .overlay h1 {
+  margin: 0;
+  font-size: 2em;
+}
+nav {
+  margin-top: 10px;
 }
 nav a {
-    margin: 0 1rem;
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 main {
-    padding: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  background-image: url('https://images.unsplash.com/photo-1588240281640-427d88d517e4'); /* Japanese countryside */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #000;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
-td, th {
-    padding: 10px;
-    border: 1px solid #ccc;
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 button {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border: none;
-    background: #28a745;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 button:hover {
-    background: #218838;
+  background: #15803d;
 }
-@media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-    td, th {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-    td::before, th::before {
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        white-space: nowrap;
-    }
+@media(max-width:600px){
+  table, thead, tbody, th, td, tr{display:block}
+  th, td{padding-left:50%}
+  td::before, th::before{position:absolute;left:10px;width:45%;white-space:nowrap}
 }
